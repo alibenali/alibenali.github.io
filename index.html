@@ -1,1 +1,100 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Payment Options</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        .payment-options {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .payment-option {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .payment-button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .payment-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .paypal { background-color: #003087; }
+        .paypal:hover { background-color: #001f52; }
+        .binance { background-color: #f0b90b; }
+        .binance:hover { background-color: #d4a307; }
+        .wise { background-color: #00b9ff; }
+        .wise:hover { background-color: #0091c8; }
+        .baridimob {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 4px;
+            margin-top: 40px;
+            border: 1px solid #e9ecef;
+        }
+        .baridimob h2 {
+            color: #2c3e50;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .baridimob p {
+            color: #495057;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Payment Options</h1>
+        <div class="payment-options">
+            <div class="payment-option">
+                <a href="https://www.paypal.com/ncp/payment/TRRR78LPRH29C" class="payment-button paypal">PayPal</a>
+            </div>
+            <div class="payment-option">
+                <a href="https://s.binance.com/FWNPv02H" class="payment-button binance">Binance</a>
+            </div>
+            <div class="payment-option">
+                <a href="https://wise.com/pay/r/KVFlHMT-RPp2TQI" class="payment-button wise">Wise</a>
+            </div>
+        </div>
+        <div class="baridimob">
+            <h2>BaridiMob Account Details</h2>
+            <p>Account Number: 00799999002555700916</p>
+        </div>
+    </div>
+</body>
+</html>
